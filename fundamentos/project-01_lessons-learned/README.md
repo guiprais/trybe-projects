@@ -1,3 +1,5 @@
+<image src="https://i.postimg.cc/9X8CYKpH/project-01-lessons-learned.png">
+
 ## SUMÁRIO
 
 - [Habilidades](#habilidades)
