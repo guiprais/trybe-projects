@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  color: rgb(7, 7, 7);
+  font-family: Cambria, Cochin, Georgia, Times, serif;
+  line-height: 1.3em;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(86, 130, 89);
+  z-index: 1;
+}
+
+.navbar {
+  color: white;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+main {
+  margin-top: 90px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.skills {
+  width: 100%;
+}
+
+.socials {
+  display: inline-block;
+}
+
+#minha_foto {
+  width: 300px;
+  border-bottom: 35px solid rgb(150, 230, 179);
+}
+
+.name {
+  width: 300px;
+  text-align: center;
+}
+
+.socials a {
+  position: relative;
+  top: -32px;
+  color: rgb(7, 7, 7);
+}
+
+.lessons {
+  display: inline-block;
+  width: 574px;
+  position: relative;
+  bottom: 108.75px;
+}
+
+.licoes {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.lista1 , .lista2 {
+  display: inline-block;
+}
+
+.lista1 h2 , .lista2 h2 {
+  font-size: 1.2em;
+  color: rgb(86, 130, 89);
+  margin-bottom: 10px;
+}
+
+.lista2 {
+  margin-left: 1.5em;
+}
+
+#licoes_aprendidas {
+  margin-right: 5em;
+  list-style: none;
+  display: inline-block;
+}
+
+#licoes_a_aprender {
+  list-style: none;
+  display: inline-block;
+}
+
+.articles {
+  margin-bottom: 200px;
+}
+
+.lado-esquerdo {
+  width: 300px;
+  float: left;
+}
+
+.lado-direito {
+  margin-left: 330px;
+}
+
+#tabela {
+  width: 550px;
+  text-align: center;
+  padding-left: 15px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#tabela tr th {
+  color: rgb(150, 230, 179);
+}
+
+#rodape {
+  background-color: rgb(86, 130, 89);
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
