@@ -20,12 +20,17 @@ function concatName(array) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  return (wins * 3) + ties;
+  return wins * 3 + ties;
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(array) {
+  const maxNumber = Math.max(...array);
+
+  return array.reduce(
+    (acc, number) => (number === maxNumber ? acc + 1 : acc),
+    0,
+  );
 }
 
 // Desafio 7
