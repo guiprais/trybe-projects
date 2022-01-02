@@ -46,8 +46,12 @@ function triangleCheck() {
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(welcome) {
+  const cups = welcome
+    .match(/\d+/g)
+    .reduce((acc, number) => acc + parseInt(number, 10), 0);
+
+  return `${cups} ${cups > 1 ? 'copos' : 'copo'} de água`;
 }
 
 module.exports = {
