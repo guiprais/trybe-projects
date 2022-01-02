@@ -8,8 +8,36 @@ function techList(array, name) {
 }
 
 // Desafio 11
-function generatePhoneNumber() {
-  // seu código aqui
+const getOccurrences = (array, value) => (
+  array.reduce((acc, item) => (
+    value === item ? acc + 1 : acc
+  ), 0)
+);
+
+const createPhoneNumber = (arr) => {
+  let mask = '(xx) xxxxx-xxxx';
+
+  arr.forEach((item) => {
+    mask = mask.replace('x', item);
+  });
+
+  return mask;
+};
+
+function generatePhoneNumber(phone) {
+  if (phone.length !== 11) {
+    return 'Array com tamanho incorreto.';
+  }
+
+  const validateNumbers = phone.some((number) => number > 9 || number < 0);
+  const everyOccurrence = phone.map((number) => getOccurrences(phone, number));
+  const someNumberRepeatsThreeOrMore = everyOccurrence.some((number) => number > 2);
+
+  if (someNumberRepeatsThreeOrMore || validateNumbers) {
+    return 'não é possível gerar um número de telefone com esses valores';
+  }
+
+  return createPhoneNumber(phone);
 }
 
 // Desafio 12
